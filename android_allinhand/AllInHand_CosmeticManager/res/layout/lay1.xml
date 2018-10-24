@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+    <TableLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dip"
+        >
+		<TableRow 
+		    android:layout_marginTop="26dip">
+         <ImageView
+            android:id="@+id/productimg"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:src="@drawable/product"
+         android:onClick="Goproduct"/>
+         <ImageView
+            android:id="@+id/user"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:src="@drawable/user"
+         android:onClick="Gouser"/>
+         <ImageView
+         android:id="@+id/personset"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:src="@drawable/personset"
+         android:onClick="purchaseTotal"
+         />
+        
+    </TableRow>
+    <TableRow 
+        android:layout_marginTop="26dip">
+         <ImageView
+            android:id="@+id/supplier"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:src="@drawable/supplier"
+         android:onClick="supplierActivity"
+         />
+        <ImageView
+            android:id="@+id/purchaseru"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:src="@drawable/purchaseru"
+         android:onClick="purchaseru"/>
+        <ImageView
+            android:id="@+id/purchasetui"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:src="@drawable/purchasetui"
+         android:onClick="purchasetui"/>
+       
+    </TableRow>
+    <TableRow 
+        android:layout_marginTop="26dip">
+        
+        
+       
+        <ImageView
+            android:id="@+id/client"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:src="@drawable/client"
+         android:onClick="Goclient"/>
+        <ImageView
+         android:id="@+id/deliverychu"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:src="@drawable/deliverychu"
+         android:onClick="go_master"/>
+
+        <ImageView
+             android:id="@+id/deliverytui"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/deliverytui"
+            android:onClick="go_mastertui" />
+        
+    </TableRow>
+    </TableLayout>
+</LinearLayout>

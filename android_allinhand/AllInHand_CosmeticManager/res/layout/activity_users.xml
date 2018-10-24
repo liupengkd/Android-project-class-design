@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/ui_titlebar_bg_test2"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/BtnUserBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dip"
+            android:background="@drawable/ui_button_bg_test3"
+            android:onClick="btnback"
+            android:padding="1dip"
+            android:text="@string/back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="40dip"
+            android:padding="8dip"
+            android:text="用户管理"
+            android:textColor="@color/black"
+            android:textSize="17dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/bg_searcharea"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnUserList"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_bg_normal_left"
+            android:text="用户列表" />
+
+        <Button
+            android:id="@+id/btnAddUser"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_bg_defocused_right"
+            android:onClick="AddUser"
+            android:text="添加用户" />
+    </LinearLayout>
+
+    <AutoCompleteTextView
+        android:id="@+id/UserSelectTxt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginTop="2dip"
+        android:textColor="@color/black"
+        android:hint="请输入要查询的用户名或编号"
+        android:ems="10"
+        android:padding="2dip" >
+    </AutoCompleteTextView>
+
+    <ListView
+        android:id="@+id/UsersListview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout1"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/UserSelectTxt" >
+
+    </ListView>
+
+</RelativeLayout>

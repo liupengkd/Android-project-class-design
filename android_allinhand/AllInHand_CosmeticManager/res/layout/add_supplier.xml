@@ -1,0 +1,179 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/ui_titlebar_bg_test2"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10px"
+            android:background="@drawable/ui_button_bg_test3"
+            android:onClick="back"
+            android:text="@string/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="85dip"
+            android:text="供应商资料"
+            android:textColor="@color/black" 
+            android:textSize="17dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="15dip"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/num_supplier"
+                android:layout_width="80.0dip"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6.0dip"
+                android:text="编         号："
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/ed_supplier1"
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:enabled="false"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(*)"
+                android:textColor="#ffff0000"
+                android:textSize="14.0dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/name_supplier"
+                android:layout_width="80.0dip"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6.0dip"
+                android:text="名         称："
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/ed_supplier2"
+                android:layout_width="200dip"
+                android:layout_height="wrap_content" 
+                android:singleLine="true"
+                android:maxLength="60"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(*)"
+                android:textColor="#ffff0000"
+                android:textSize="14.0dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/phone_supplier"
+                android:layout_width="80.0dip"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6.0dip"
+                android:text="联系电话："
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/ed_supplier3"
+                android:layout_width="200dip"
+                android:layout_height="wrap_content"
+                android:phoneNumber="true"
+                android:singleLine="true"
+                android:maxLength="60"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(*)"
+                android:textColor="#ffff0000"
+                android:textSize="14.0dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/address_supplier"
+                android:layout_width="80.0dip"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6.0dip"
+                android:text="公司地址："
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/ed_supplier4"
+                android:layout_width="200dip"
+                android:layout_height="wrap_content" 
+                android:singleLine="true"
+                android:maxLength="100"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(*)"
+                android:textColor="#ffff0000"
+                android:textSize="14.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_submitsupplier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="finish"
+            android:text="提交" >
+        </Button>
+
+        <Button
+            android:id="@+id/btn_emptysupplier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="empty"
+            android:text="清空" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

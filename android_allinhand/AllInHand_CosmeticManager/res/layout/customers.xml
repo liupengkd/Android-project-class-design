@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/ui_titlebar_bg_test2"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/customerBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dip"
+            android:background="@drawable/ui_button_bg_test3"
+            android:onClick="btnback"
+            android:padding="1dip"
+            android:text="@string/back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="40dip"
+            android:padding="8dip"
+            android:text="客户信息管理"
+            android:textColor="@color/black"
+            android:textSize="17dip" />
+    </LinearLayout>
+
+    <AutoCompleteTextView
+        android:id="@+id/SelectCustomerText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="3dip"
+        android:textColor="@color/black"
+        android:ems="10"
+        android:hint="要查询的客户名"
+        android:padding="14dip" 
+        android:completionThreshold="1"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/bg_searcharea"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/CusList"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_bg_normal_left"
+            android:text="客户列表" />
+
+        <Button
+            android:id="@+id/AddCustomer"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/button_bg_defocused_right"
+            android:onClick="AddCustomer"
+            android:text="添加客户" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/Cutstomerlistview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_below="@+id/SelectCustomerText"
+        android:layout_centerHorizontal="true"
+        android:padding="5dip" >
+    </ListView>
+
+</RelativeLayout>

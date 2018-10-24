@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="2dip" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dip"
+        android:orientation="horizontal" >
+
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="编号:"
+            android:textSize="16dip"
+            />
+        <TextView
+            android:id="@+id/CommID"
+            android:layout_width="60dip"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16dip" />
+
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商品名称:"
+            android:textSize="16dip"
+            />
+        <TextView
+            android:id="@+id/CommName"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="16dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="1dip" >
+
+        <TextView
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:text="供  应  商："
+            android:textColor="@color/black"
+            android:textSize="12dip" />
+
+        <TextView
+            android:id="@+id/Commsupplier"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="12dip" />
+
+        <TextView
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:text="单       价："
+            android:textColor="@color/black"
+            android:textSize="12dip" />
+
+        <TextView
+            android:id="@+id/Commprice"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="12dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="1dip" >
+
+        <TextView
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:text="最大库存："
+            android:textColor="@color/black"
+            android:textSize="12dip" />
+
+        <TextView
+            android:id="@+id/CommMax"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="12dip" />
+
+        <TextView
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:text="安全库存："
+            android:textColor="@color/black"
+            android:textSize="12dip" />
+
+        <TextView
+            android:id="@+id/CommLittle"
+            android:layout_width="44dip"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="12dip" />
+    </LinearLayout>
+
+</LinearLayout>

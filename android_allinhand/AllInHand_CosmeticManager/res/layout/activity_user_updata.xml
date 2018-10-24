@@ -1,0 +1,210 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/ui_titlebar_bg_test2"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dip"
+            android:background="@drawable/ui_button_bg_test3"
+            android:onClick="btnback"
+            android:padding="1dip"
+            android:text="@string/back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="40dip"
+            android:padding="8dip"
+            android:text="用户信息管理"
+            android:textColor="@color/black"
+            android:textSize="17dip" />
+    </LinearLayout>
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:padding="10dip"
+        android:stretchColumns="1" >
+
+        <TableRow android:id="@+id/row1">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户编号："
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/EdUserID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:singleLine="true"
+                />
+
+            <TextView
+                android:id="@+id/txtUserID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(*)"
+                android:textColor="#ffff0000" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用  户  名："
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/EdUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:singleLine="true"
+                android:maxLength="128"
+                />
+
+            <TextView
+                android:id="@+id/txtUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(*)"
+                android:textColor="#ffff0000" />
+        </TableRow>
+
+        <TableRow
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户角色："
+                android:textColor="@color/black" />
+
+            <Spinner
+                android:id="@+id/EdUserRole"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtUserRole"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(*)"
+                android:textColor="#ffff0000" />
+        </TableRow>
+
+        <TableRow android:id="@+id/row4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="密       码："
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/EdUserPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:password="true"
+                android:enabled="false"
+                android:focusable="false"
+                android:singleLine="true"
+                android:maxLength="32"
+                 >
+            </EditText>
+
+            <TextView
+                android:id="@+id/txtUserPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(*)"
+                android:textColor="#ffff0000" />
+        </TableRow>
+
+        <TableRow android:id="@+id/row5">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确认密码："
+                android:textColor="@color/black" 
+                
+                />
+
+            <EditText
+                android:id="@+id/EdUserPassT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:password="true"
+                android:enabled="false"
+                android:focusable="false"
+                android:singleLine="true"
+                 />
+
+            <TextView
+                android:id="@+id/txtUserPassT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(*)"
+                android:textColor="#ffff0000" />
+        </TableRow>
+    </TableLayout>
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注: 密码默认为123456"
+            android:textColor="#ffff0000" 
+            android:id="@+id/zhu"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal" android:layout_marginLeft="5dip"
+	    android:layout_marginRight="5dip"
+	    android:layout_marginTop="10dip"
+        >
+
+        <Button
+            android:id="@+id/btnUserClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_vertical"
+            android:layout_weight="1"
+            android:onClick="UserClear"
+            android:text="清空" />
+
+        <Button
+            android:id="@+id/btnUserGood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_vertical"
+            android:layout_weight="1"
+            android:onClick="UserGood"
+            android:text="完		  成" />
+    </LinearLayout>
+
+</LinearLayout>

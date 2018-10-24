@@ -1,0 +1,190 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/ui_titlebar_bg_test2"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dip"
+            android:background="@drawable/ui_button_bg_test3"
+            android:onClick="btnback"
+            android:padding="1dip"
+            android:text="@string/back" />
+
+        <TextView
+            android:layout_width="120dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="40dip"
+            android:padding="8dip"
+            android:text="商品信息管理"
+            android:textColor="@color/black"
+            android:textSize="17dip" />
+    </LinearLayout>
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:padding="10dip"
+        android:stretchColumns="1" >
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品编号："
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/EdCommID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:digits="1234567890abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXVZ"
+                 android:maxLength="8" />
+
+            <TextView
+                android:id="@+id/txtCommID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(*)"
+                android:textColor="#ffff0000" />
+        </TableRow>
+
+        <TableRow android:gravity="center_vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="供  应  商："
+                android:textColor="@color/black" />
+
+            <Spinner
+                android:id="@+id/CommSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="50dip" 
+                />
+
+            <TextView
+                android:id="@+id/txtCommSup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="(*)"
+                android:textColor="#ffff0000" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商  品  名："
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/EdCommName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 android:maxLength="30" 
+                 android:singleLine="true"
+                 />
+
+            <TextView
+                android:id="@+id/txtCommName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(*)"
+                android:textColor="#ffff0000" />
+        </TableRow>
+
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="安全存量："
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/EdCommSafetyStock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:digits="1234567890"
+                android:singleLine="true"
+                android:maxLength="3" />
+
+            <TextView
+                android:id="@+id/txtSafetyStock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(*)"
+                android:textColor="#ffff0000" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最大库存"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/EdCommMaxStock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numeric="integer"
+                android:singleLine="true"
+                android:maxLength="5" />
+
+            <TextView
+                android:id="@+id/txtMaxStock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(*)"
+                android:textColor="#ffff0000" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:gravity="center_horizontal" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_vertical"
+            android:layout_weight="1"
+            android:onClick="CommClear"
+            android:text="清空" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="CommGood"
+            android:layout_weight="1"
+            android:text="完成" />
+    </LinearLayout>
+
+</LinearLayout>

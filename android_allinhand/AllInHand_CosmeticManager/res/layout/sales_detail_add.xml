@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/ui_titlebar_bg_test2" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dip"
+            android:background="@drawable/ui_button_bg_test3"
+            android:onClick="btnback"
+            android:text="@string/back" />
+
+        <TextView
+            android:id="@+id/tvtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="70dip"
+            android:text="销售出库"
+            android:textColor="#000000"
+            android:textSize="17dip" />
+            <Button android:background="@drawable/ui_button_bg_2222"
+            android:layout_width="54dip"
+            android:layout_height="36dip"
+            android:layout_marginLeft="60dip"
+			android:layout_marginTop="6dip"
+			android:text="首页"
+			android:onClick="btnhome"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="15dip"
+        android:orientation="vertical" >
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="80.0dip"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="marquee"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="left"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:paddingLeft="6.0dip"
+                        android:singleLine="true"
+                        android:text="@string/product_name"
+                        android:textColor="@color/black" />
+
+                    <Button
+                        android:id="@+id/btnproductname"
+                        android:layout_width="200.0dip"
+                        android:layout_height="wrap_content"
+                        android:onClick="go_productlist"/>
+                    <Spinner
+                        android:id="@+id/spproductname"
+                        android:layout_width="200.0dip"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="(*)"
+                        android:textColor="#ffff0000"
+                        android:textSize="14.0dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tvkcnum"
+                        android:layout_width="80.0dip"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="marquee"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="left"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:paddingLeft="6.0dip"
+                        android:singleLine="true"
+                        android:text="商品库存："
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/etkcnum"
+                        android:layout_width="100.0dip"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:text="0" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="80.0dip"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="marquee"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="left"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:paddingLeft="6.0dip"
+                        android:singleLine="true"
+                        android:text="@string/num"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/etnum"
+                        android:layout_width="100.0dip"
+                        android:layout_height="wrap_content"
+                        android:selectAllOnFocus="true"
+                        android:text="1" 
+                        android:maxLength="10"
+                        android:digits="1234567890"
+                        android:singleLine="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="80.0dip"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="marquee"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="left"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:paddingLeft="6.0dip"
+                        android:singleLine="true"
+                        android:text="@string/price"
+                        android:textColor="@color/black" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <EditText
+                            android:id="@+id/etprice"
+                            android:layout_width="100.0dip"
+                            android:layout_height="wrap_content"
+                            android:enabled="false"
+                            android:paddingLeft="20dip"
+                            android:singleLine="true"
+                            android:text="0.00" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/edprice"
+                            android:layout_alignLeft="@+id/edprice"
+                            android:layout_alignTop="@+id/edprice"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="5dip"
+                            android:hint="¥"
+                            android:textSize="20dip" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="80.0dip"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="marquee"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="left"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:paddingLeft="6.0dip"
+                        android:singleLine="true"
+                        android:text="@string/amount"
+                        android:textColor="@color/black" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <EditText
+                            android:id="@+id/etamount"
+                            android:layout_width="200.0dip"
+                            android:layout_height="wrap_content"
+                            android:enabled="false"
+                            android:paddingLeft="20dip"
+                            android:singleLine="true"
+                            android:text="0.00" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/edamount"
+                            android:layout_alignLeft="@+id/edamount"
+                            android:layout_alignTop="@+id/edamount"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="5dip"
+                            android:hint="¥"
+                            android:textSize="20dip" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center" >
+
+                    <Button
+                        android:id="@+id/btnok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="go_detaillist"
+                        android:text="@string/ok" />
+
+                    <Button
+                        android:id="@+id/btnnext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:onClick="go_detailadd"
+                        android:text="@string/zsave" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+
+</LinearLayout>

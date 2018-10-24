@@ -1,0 +1,47 @@
+<resources>
+
+    <string name="app_name">All In Hand</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">All In Hand</string>
+    <string name="strInputAccHint">输入用户名</string>
+    <string name="strInputPWDHint">输入密码</string>
+    <string name="strAccInputLabel">用户名：</string>
+    <string name="strPswInputLabel">密\u0020\u0020\u0020\u0020码：</string>
+    <string name="opt_remember">记住密码</string>
+    <string name="login">登\u0020\u0020录</string>
+    <string name="titles">基础设置</string>
+    <string name="title_activity_stock_warn">StockWarnActivity</string>
+    <string name="title_activity_stock_taking">StockTakingActivity</string>
+    <string name="title_activity_purchase_total">PurchaseTotalActivity</string>
+    <string name="title_activity_stock_select">StockSelectActivity</string>
+    <string name="delete">删除</string>
+    <string name="ok">完成</string>
+    <string name="btn_back"> 返回</string>
+    <string name="btn_new">新建</string>
+    <string name="title_activity_add_supplier">AddSupplier</string>
+    <string name="zsave">NEXT</string>
+    <string name="update">更新</string>
+    <string name="back">\u0020\u0020\u0020返回</string>
+    <string name="sale_title">销售单据</string>
+    <string name="order_id">订单编号：</string>
+    <string name="date">日\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020期：</string>
+    <string name="salesman">销\u0020\u0020售\u0020\u0020员：</string>
+    <string name="customer">客\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020户：</string>
+    <string name="detail">明细</string>
+    <string name="submit">提交订单</string>
+    <string name="submit_detail">提交明细</string>
+    <string name="inventorySearchLabel">请输入订单编号</string>
+    <string name="product_name">商品名称：</string>
+    <string name="num">数\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020量：</string>
+    <string name="price">单\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020价：</string>
+    <string name="amount">金\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020额：</string>
+    <string name="total">总\u0020\u0020金\u0020\u0020额：</string>
+    <string name="supplier">供\u0020\u0020应\u0020\u0020商：</string>
+    <string name="order_list">订单清单</string>
+    <string name="new_order">新建订单</string>
+    <string name="new_detail">新建明细</string>
+    <string name="detail_list">明细清单</string>
+    <string name="title_activity_ma">Ma</string>
+
+</resources>

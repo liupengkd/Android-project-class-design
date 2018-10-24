@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="40dip"
+    android:orientation="horizontal"
+	android:gravity="center">
+    <TextView 
+        android:id="@+id/UserListN"
+        android:layout_width="60dip"
+        android:layout_height="wrap_content"
+        android:text="用户名："/>
+    <TextView 
+	    android:id="@+id/UserListName"
+        android:layout_width="120dip"
+        android:layout_height="wrap_content"
+        android:text="鼠标"/>
+	<TextView
+	    android:id="@+id/UserListR"
+        android:layout_width="70dip"
+        android:layout_height="wrap_content"
+        android:text="用户角色：" />
+	<TextView 
+	    android:id="@+id/UserListRole"
+        android:layout_width="60dip"
+        android:layout_height="wrap_content"
+        android:text="管理员"/>
+</LinearLayout>

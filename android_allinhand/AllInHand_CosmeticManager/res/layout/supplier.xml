@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/ui_titlebar_bg_test2"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10px"
+            android:background="@drawable/ui_button_bg_test3"
+            android:onClick="back"
+            android:text="@string/back" >
+        </Button>
+
+        <TextView
+            android:id="@+id/txt_supplier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="85dip"
+            android:text="供应商资料"
+            android:textColor="@color/black"
+            android:textSize="17dip"  />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="5dip" >
+
+        <AutoCompleteTextView
+            android:id="@+id/act_query"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入供应商名称"
+            android:textColor="@android:color/black" 
+            android:completionThreshold="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout3"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/linearLayout2" >
+
+        <ListView
+            android:id="@+id/list_supplier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/bg_searcharea"
+        android:gravity="center"
+        android:padding="10dip"  >
+
+        <Button
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg_normal_left"
+            android:text="供应商资料" />
+
+        <Button
+            android:id="@+id/btn_newsupplier"
+            android:layout_width="80dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg_defocused_right"
+            android:onClick="AddSupplier"
+            android:text="新建资料" />
+    </LinearLayout>
+
+</RelativeLayout>

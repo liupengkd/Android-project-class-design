@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:background="@drawable/ui_titlebar_bg_test2" >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dip"
+                android:background="@drawable/ui_button_bg_test3"
+                android:onClick="btnback"
+                android:text="@string/back" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="70dip"
+                android:text="采购入库"
+                android:textColor="#000000"
+                android:textSize="17dip"  />
+             <Button android:background="@drawable/ui_button_bg_2222"
+            android:layout_width="54dip"
+            android:layout_height="36dip"
+            android:layout_marginLeft="60dip"
+			android:layout_marginTop="6dip"
+			android:text="首页"
+			android:onClick="btnhome"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:background="@drawable/bg_searcharea"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dip"
+            android:paddingRight="5dip" >
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/order_id"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/orderid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv"
+                android:text="flasdfj"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/total"
+                android:text="@string/total"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="0.00"
+                android:textColor="@color/black" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="fill_parent"
+            android:layout_height="372dp"            
+            android:layout_marginTop="5dip"  >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_searcharea"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="70.0dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg_normal_left"
+            android:text="@string/detail_list" />
+
+        <Button
+            android:id="@+id/newDetail"
+            android:layout_width="70.0dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg_defocused"
+            android:onClick="new_detail"
+            android:text="@string/new_detail" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="70.0dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg_defocused_right"
+            android:onClick="submit"
+            android:text="@string/submit_detail" />
+    </LinearLayout>
+
+</RelativeLayout>

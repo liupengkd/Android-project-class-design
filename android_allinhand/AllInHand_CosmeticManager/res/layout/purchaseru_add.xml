@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/ui_titlebar_bg_test2" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dip"
+            android:background="@drawable/ui_button_bg_test3"
+            android:onClick="btnback"
+            android:text="@string/back" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="70dip"
+            android:text="采购入库"
+            android:textColor="#000000"
+            android:textSize="17dip"  />
+        <Button android:background="@drawable/ui_button_bg_2222"
+            android:layout_width="54dip"
+            android:layout_height="36dip"
+            android:layout_marginLeft="60dip"
+			android:layout_marginTop="6dip"
+			android:text="首页"
+			android:onClick="btnhome"/>
+        
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="15dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="80dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/order_id"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/txtbh"
+                    android:layout_width="200dip"
+                    android:layout_height="wrap_content"
+                    android:enabled="false" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(*)"
+                    android:textColor="#ffff0000"
+                    android:textSize="14.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="80dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/txtdate"
+                    android:layout_width="200dip"
+                    android:layout_height="wrap_content"
+                    android:enabled="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="80dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/total"
+                    android:textColor="@color/black" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <EditText
+                        android:id="@+id/txttotal"
+                        android:layout_width="200dip"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dip"
+                        android:text="0.00" 
+                        android:enabled="false">
+                    </EditText>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/txttotal"
+                        android:layout_alignLeft="@+id/txttotal"
+                        android:layout_alignTop="@+id/txttotal"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="5dip"
+                        android:hint="¥"
+                        android:textSize="20dip" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:layout_marginRight="5dip"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="wrap_content"
+                    android:text="@string/supplier"
+                    android:textColor="@color/black" />
+
+                <Spinner
+                    android:id="@+id/spiSupplier"
+                    android:layout_width="200dip"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(*)"
+                    android:textColor="#ffff0000"
+                    android:textSize="14.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:focusable="true"
+        android:onClick="detail"
+        android:text="@string/detail" />
+
+    
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:onClick="submit"
+        android:text="@string/submit" />
+
+</LinearLayout>

@@ -1,0 +1,77 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="40dip"
+    android:background="@drawable/ui_titlebar_bg_test2"
+    android:orientation="horizontal"
+    >
+    <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:background="@drawable/ui_button_bg_test3"
+       android:layout_marginLeft="10px"
+       android:layout_gravity="center_vertical"
+       android:text="@string/btn_back"
+       android:onClick="back"
+        ></Button>
+    <TextView 
+        android:layout_width="wrap_content"
+       	android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="85dip"
+        android:text="供应商"
+        android:textColor="@color/black"
+       	/>
+	</LinearLayout>
+	<LinearLayout 
+			android:orientation="horizontal" 
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 
+			android:layout_marginTop="2.0dip">
+	<AutoCompleteTextView 
+	    		android:textColor="@android:color/black"
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content" />
+	</LinearLayout>
+	<LinearLayout
+	    android:orientation="vertical" 
+	    android:layout_width="fill_parent"
+       	android:layout_height="wrap_content"
+       	android:layout_marginTop="2dip">
+	    <ListView 
+	        android:id="@+id/list_supplier"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        ></ListView>
+	    
+	</LinearLayout>
+	</LinearLayout>
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+	    android:padding="10dip"
+	    android:layout_marginTop="260dip">
+	    <Button 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/btn_new"
+	        android:onClick="AddSupplier"/>
+	    
+	</LinearLayout>
+	
+    
+
+    
+</LinearLayout>
